@@ -1,4 +1,5 @@
-// based on swift-concurrency-extras
+// based on
+// https://github.com/pointfreeco/swift-concurrency-extras/blob/f7e9d4ad59d3ecabe5cc207c5e655a03b2b56876/Sources/ConcurrencyExtras/LockIsolated.swift
 
 import Foundation
 
