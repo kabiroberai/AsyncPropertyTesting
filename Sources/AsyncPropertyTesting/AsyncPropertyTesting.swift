@@ -15,6 +15,7 @@ public func withRandomExecutor(
     @_implicitSelfCapture operation: @Sendable () async throws -> Void
 ) async rethrows {
     for seed in 0..<UInt64(iterations) {
+        print("Running seed: \(seed)")
         try await withRandomExecutor(seed: seed, operation: operation)
     }
 }
