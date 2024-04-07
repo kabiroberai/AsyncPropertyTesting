@@ -178,7 +178,7 @@ final class RandomExecutorTests: XCTestCase {
         }
 
         let failures = LockIsolated(0)
-        await withRandomExecutor(iterations: 100) {
+        await withRandomExecutor {
             let cache = CacheSUT()
             async let task0 = cache.get(key: 0) { "zero" }
             async let task1 = cache.get(key: 0) { "zero" }

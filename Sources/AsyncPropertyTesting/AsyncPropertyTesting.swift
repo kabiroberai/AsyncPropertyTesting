@@ -11,7 +11,7 @@ public func withRandomExecutor(
 }
 
 public func withRandomExecutor(
-    iterations: Int,
+    iterations: Int = 100,
     @_implicitSelfCapture operation: @Sendable () async throws -> Void
 ) async rethrows {
     for seed in 0..<UInt64(iterations) {
